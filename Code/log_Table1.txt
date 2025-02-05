@@ -1,0 +1,222 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/shoude/Dropbox/eegap/Replication_JPube_RR/log_Table1.txt
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}29 Jul 2021, 12:31:06
+{txt}
+{com}. use "$datapath_retail/bup/lcidemo_046_2008_2012_Dhd_complete_sample_reg_eegap_ready_seed_1_sample_50", clear
+{txt}
+{com}. 
+. /*
+> sort state year
+> merge state year using $datapath_elec/electricity_price_state_2007_2012
+> tab _m
+> tab state if _m==1
+> tab year if _m==1
+> drop if _m==2
+> drop _m
+> 
+> sort zipcode
+> merge zipcode using $datapath_elec/mapping_zip_county_nov99_short
+> tab _m
+> drop if _m==2
+> drop _m
+> ren county5 county_utility
+> 
+> //Electricity County    
+> sort county_utility year
+> merge county_utility year using $datapath_elec/county_elec_price_2007_2012
+> tab _m
+> drop if _m==2
+> drop _m
+> replace pcount = p_elec if pcount==.
+> 
+> gen elec_cost = kwh*pcount/100
+> */
+. 
+. 
+. // Table 1: Sum stats for main attributes
+. gen Dsize     = cond(AV<29,1,0)
+{txt}
+{com}. gen Dtop      = cond(type_id ==1,1,0)
+{txt}
+{com}. gen promo_tax = promo_f + tax_zip_mode
+{txt}(1,368 missing values generated)
+
+{com}. 
+. /*
+> egen sd_kwh         = sd(kwh)
+> egen sd_mef_rel     = sd(mef_rel)
+> egen sd_promo       = sd(promo)
+> egen sd_promo_tax   = sd(promo_tax)
+> egen sd_elec_cost   = sd(elec_cost)
+> egen sd_size        = sd(Dsize)
+> egen sd_estar       = sd(estar)
+> egen sd_top             = sd(Dtop)
+> */
+. 
+. sum promo_f, detail
+
+                       {txt}(mean) promo_f
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 396.7757              0
+{txt} 5%    {res}   467.49              0
+{txt}10%    {res}   529.99              0       {txt}Obs         {res}  9,362,829
+{txt}25%    {res} 787.1329              0       {txt}Sum of Wgt. {res}  9,362,829
+
+{txt}50%    {res}  1155.99                      {txt}Mean          {res} 1263.257
+                        {txt}Largest       Std. Dev.     {res} 620.1515
+{txt}75%    {res}  1619.88        7799.99
+{txt}90%    {res} 2198.434        7899.99       {txt}Variance      {res} 384587.9
+{txt}95%    {res}  2493.99           9329       {txt}Skewness      {res} .7760778
+{txt}99%    {res}  2899.99           9329       {txt}Kurtosis      {res} 3.074494
+{txt}
+{com}. sum promo_tax, detail
+
+                          {txt}promo_tax
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 421.2446              0
+{txt} 5%    {res} 497.4561              0
+{txt}10%    {res} 565.2639              0       {txt}Obs         {res}  9,362,223
+{txt}25%    {res} 838.7895              0       {txt}Sum of Wgt. {res}  9,362,223
+
+{txt}50%    {res} 1236.211                      {txt}Mean          {res}  1348.87
+                        {txt}Largest       Std. Dev.     {res} 662.6329
+{txt}75%    {res} 1731.607       8171.381
+{txt}90%    {res} 2335.343        8347.13       {txt}Variance      {res} 439082.4
+{txt}95%    {res} 2656.666       9857.021       {txt}Skewness      {res} .7773656
+{txt}99%    {res} 3120.969       9857.021       {txt}Kurtosis      {res} 3.077838
+{txt}
+{com}. sum o_qty, detail
+{err}variable {bf}o_qty{sf} not found
+{txt}{search r(111), local:r(111);}
+
+end of do-file
+
+{search r(111), local:r(111);}
+
+{com}. sum qty*
+{err}variable {bf}qty*{sf} not found
+{txt}{search r(111), local:r(111);}
+
+{com}. sum sales*
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}sales {c |}{res}  9,362,829    .2609348    .5867344          0         90
+{txt}{space 4}sales_hd {c |}{res}  9,362,829    .1727327    .4533963          0         50
+{txt}sales_non_hd {c |}{res}  9,362,829    .0882021    .3384609          0         90
+
+{com}. sum sales, detail
+
+                         {txt}(sum) o_qty
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}  9,362,829
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}  9,362,829
+
+{txt}50%    {res}        0                      {txt}Mean          {res} .2609348
+                        {txt}Largest       Std. Dev.     {res} .5867344
+{txt}75%    {res}        0             61
+{txt}90%    {res}        1             78       {txt}Variance      {res} .3442572
+{txt}95%    {res}        1             79       {txt}Skewness      {res} 5.564882
+{txt}99%    {res}        2             90       {txt}Kurtosis      {res} 225.3596
+
+{com}. sum eleccost_county, detail
+
+                       {txt}eleccost_county
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} 32.86109       12.10197
+{txt} 5%    {res} 38.87826       12.10197
+{txt}10%    {res} 42.42201       12.10197       {txt}Obs         {res}  9,362,829
+{txt}25%    {res} 49.50613       12.10197       {txt}Sum of Wgt. {res}  9,362,829
+
+{txt}50%    {res}  59.4315                      {txt}Mean          {res}  63.0071
+                        {txt}Largest       Std. Dev.     {res} 20.34798
+{txt}75%    {res} 72.19663       312.8922
+{txt}90%    {res} 86.09395       312.8922       {txt}Variance      {res} 414.0401
+{txt}95%    {res} 95.27868       312.8922       {txt}Skewness      {res} 2.193363
+{txt}99%    {res} 136.4641       313.2438       {txt}Kurtosis      {res}  13.9428
+
+{com}. sum kwh, detail
+
+                             {txt}kwh
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}      378            305
+{txt} 5%    {res}      386            305
+{txt}10%    {res}      408            305       {txt}Obs         {res}  9,362,829
+{txt}25%    {res}      459            305       {txt}Sum of Wgt. {res}  9,362,829
+
+{txt}50%    {res}      489                      {txt}Mean          {res}  508.851
+                        {txt}Largest       Std. Dev.     {res} 76.50348
+{txt}75%    {res}      563            767
+{txt}90%    {res}      590            767       {txt}Variance      {res} 5852.783
+{txt}95%    {res}      617            767       {txt}Skewness      {res} .4975262
+{txt}99%    {res}      721            767       {txt}Kurtosis      {res} 3.262356
+
+{com}. sum Dsize, detail
+
+                            {txt}Dsize
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}  9,363,591
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}  9,363,591
+
+{txt}50%    {res}        1                      {txt}Mean          {res} .5469499
+                        {txt}Largest       Std. Dev.     {res} .4977909
+{txt}75%    {res}        1              1
+{txt}90%    {res}        1              1       {txt}Variance      {res} .2477957
+{txt}95%    {res}        1              1       {txt}Skewness      {res} -.188633
+{txt}99%    {res}        1              1       {txt}Kurtosis      {res} 1.035582
+
+{com}. sum estar, detail
+
+                            {txt}estar
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}  9,290,181
+{txt}25%    {res}        1              0       {txt}Sum of Wgt. {res}  9,290,181
+
+{txt}50%    {res}        1                      {txt}Mean          {res} .7626769
+                        {txt}Largest       Std. Dev.     {res}  .425442
+{txt}75%    {res}        1              1
+{txt}90%    {res}        1              1       {txt}Variance      {res} .1810009
+{txt}95%    {res}        1              1       {txt}Skewness      {res}-1.234842
+{txt}99%    {res}        1              1       {txt}Kurtosis      {res} 2.524835
+
+{com}. sum Dtop, detail
+
+                            {txt}Dtop
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        0              0
+{txt} 5%    {res}        0              0
+{txt}10%    {res}        0              0       {txt}Obs         {res}  9,363,591
+{txt}25%    {res}        0              0       {txt}Sum of Wgt. {res}  9,363,591
+
+{txt}50%    {res}        0                      {txt}Mean          {res} .2909201
+                        {txt}Largest       Std. Dev.     {res} .4541868
+{txt}75%    {res}        1              1
+{txt}90%    {res}        1              1       {txt}Variance      {res} .2062856
+{txt}95%    {res}        1              1       {txt}Skewness      {res}  .920678
+{txt}99%    {res}        1              1       {txt}Kurtosis      {res} 1.847648
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/shoude/Dropbox/eegap/Replication_JPube_RR/log_Table1.txt
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}29 Jul 2021, 13:32:31
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

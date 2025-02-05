@@ -1,0 +1,332 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}/Users/shoude/Dropbox/eegap/Replication_JPube_RR/log_Table2.txt
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}29 Jul 2021, 15:00:40
+{txt}
+{com}. use "$datapath_retail/bup/lcidemo_046_2008_2012_Dhd_complete_sample_reg_eegap_ready_seed_1_sample_50", clear
+{txt}
+{com}. //use "$data_pathname/lcidemo_046_2008_2012_Dhd_complete_sample_reg_eegap_ready_seed_1_sample_10", clear
+. //use "$data_pathname/lcidemo_046_2008_2012_Dhd_complete_sample_reg_eegap_ready_seed_1_sample_100", clear
+. 
+. gen estarxeleccost_county = estar*eleccost_county
+{txt}(73,410 missing values generated)
+
+{com}. gen log_sales = ln(sales+1)
+{txt}(762 missing values generated)
+
+{com}. egen brand_group = group(brand)
+{txt}(770 missing values generated)
+
+{com}. egen brand_id_group = group(brand_id)
+{txt}(762 missing values generated)
+
+{com}. 
+. label var real_price_zip_mode "Purchase Price"
+{txt}
+{com}. label var eleccost_county "Energy Cost"
+{txt}
+{com}. label var estarxeleccost_county "Energy Star x Energy Cost"
+{txt}
+{com}. label var rebate_estar "Energy Star Rebate"
+{txt}
+{com}. label var pcounty_elec "County Electric Price"
+{txt}
+{com}. 
+. 
+. **************************************************************************************************************************************************************************************************************
+. *TABLES: HOW MUCH VARIATION IN PRICE IS DRIVEN BY DEMAND SIDE SHIFTS FOR CHARACTERISTICS?
+. **************************************************************************************************************************************************************************************************************
+. gen lg_promo_f = ln(promo_f)
+{txt}(863 missing values generated)
+
+{com}. eststo clear
+{txt}
+{com}. 
+. // Variation there is relative to the mean product price
+. eststo t_var_1: reghdfe lg_promo_f, absorb(pid_id) residuals(res_pid_only)
+{res}{txt}(dropped 59 {browse "http://scorreia.com/research/singletons.pdf":singleton observations})
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 1 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res} 9,362,669
+{txt}Absorbing 1 HDFE group{col 51}{help j_robustsingular##|_new:F(   0,9360237)}{col 67}=          {res}.
+{txt}{col 51}Prob > F{col 67}=          {res}.
+{txt}{col 51}R-squared{col 67}= {res}    0.9651
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.9651
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.0000
+{txt}{col 51}Root MSE{col 67}= {res}    0.0949
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  lg_promo_f{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}_cons {c |}{col 14}{res}{space 2} 7.018028{col 26}{space 2}  .000031{col 37}{space 1} 2.3e+05{col 46}{space 3}0.000{col 54}{space 4} 7.017967{col 67}{space 3} 7.018089
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 13}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text} Absorbed FE{col 14}{c |} Categories{col 27} - Redundant{col 39}  = Num. Coefs{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}      pid_id{col 14}{c |}{space 1}     2432{col 27}{space 1}        0{col 39}{result}{space 1}     2432{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}{hline 13}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+{res}{txt}
+{com}. bys pid_id: egen sd_res_pid_only  = sd(res_pid_only)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen min_res_pid_only = min(res_pid_only)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen max_res_pid_only = sd(res_pid_only)
+{txt}(844 missing values generated)
+
+{com}. *graph box res_pid_only, over(pid_id)
+. 
+. bys pid_id: egen mean_promo_f  = mean(promo_f)
+{txt}(762 missing values generated)
+
+{com}. gen pct_change = (promo_f-mean_promo_f)/mean_promo_f 
+{txt}(785 missing values generated)
+
+{com}. sum pct_change 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 2}pct_change {c |}{res}  9,362,806   -1.02e-09    .0939336         -1    1.99432
+{txt}
+{com}. 
+. // Taking out week-of-sample FE 
+. eststo t_var_2: reghdfe lg_promo_f, absorb(pid_id week_num) residuals(res_pid_week)
+{res}{txt}(dropped 59 {browse "http://scorreia.com/research/singletons.pdf":singleton observations})
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 10 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res} 9,362,669
+{txt}Absorbing 2 HDFE groups{col 51}{help j_robustsingular##|_new:F(   0,9359986)}{col 67}=          {res}.
+{txt}{col 51}Prob > F{col 67}=          {res}.
+{txt}{col 51}R-squared{col 67}= {res}    0.9731
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.9731
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.0000
+{txt}{col 51}Root MSE{col 67}= {res}    0.0834
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  lg_promo_f{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}_cons {c |}{col 14}{res}{space 2} 7.018028{col 26}{space 2} .0000272{col 37}{space 1} 2.6e+05{col 46}{space 3}0.000{col 54}{space 4} 7.017975{col 67}{space 3} 7.018082
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 13}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text} Absorbed FE{col 14}{c |} Categories{col 27} - Redundant{col 39}  = Num. Coefs{col 54}{c |}
+{res}{col 1}{text}{hline 13}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}      pid_id{col 14}{c |}{space 1}     2432{col 27}{space 1}        0{col 39}{result}{space 1}     2432{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}    week_num{col 14}{c |}{space 1}      252{col 27}{space 1}        1{col 39}{result}{space 1}      251{col 53}{text} {col 54}{c |}
+{res}{col 1}{text}{hline 13}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+{res}{txt}
+{com}. bys pid_id: egen sd_res_pid_week  = sd(res_pid_week)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen min_res_pid_week = min(res_pid_week)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen max_res_pid_week = sd(res_pid_week)
+{txt}(844 missing values generated)
+
+{com}. sum sd_res_pid_week 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+sd_res_pid~k {c |}{res}  9,362,747    .0804783    .0217339          0   .9505337
+{txt}
+{com}. *graph box res_pid_only, over(pid_id)
+. 
+. eststo t_var_3: reghdfe lg_promo_f, absorb(pid_id brand_week_num) residuals(res_pid_brandweek)
+{res}{txt}(dropped 78 {browse "http://scorreia.com/research/singletons.pdf":singleton observations})
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 32 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res} 9,362,650
+{txt}Absorbing 2 HDFE groups{col 51}{help j_robustsingular##|_new:F(   0,9357982)}{col 67}=          {res}.
+{txt}{col 51}Prob > F{col 67}=          {res}.
+{txt}{col 51}R-squared{col 67}= {res}    0.9738
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.9737
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.0000
+{txt}{col 51}Root MSE{col 67}= {res}    0.0823
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  lg_promo_f{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}_cons {c |}{col 14}{res}{space 2} 7.018027{col 26}{space 2} .0000269{col 37}{space 1} 2.6e+05{col 46}{space 3}0.000{col 54}{space 4} 7.017975{col 67}{space 3}  7.01808
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 16}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text}    Absorbed FE{col 17}{c |} Categories{col 30} - Redundant{col 42}  = Num. Coefs{col 57}{c |}
+{res}{col 1}{text}{hline 16}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}         pid_id{col 17}{c |}{space 1}     2432{col 30}{space 1}        0{col 42}{result}{space 1}     2432{col 56}{text} {col 57}{c |}
+{res}{col 1}{text} brand_week_num{col 17}{c |}{space 1}     2246{col 30}{space 1}       10{col 42}{result}{space 1}     2236{col 56}{text} {col 57}{c |}
+{res}{col 1}{text}{hline 16}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+{res}{txt}
+{com}. bys pid_id: egen sd_res_pid_brandweek  = sd(res_pid_brandweek)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen min_res_pid_brandweek = min(res_pid_brandweek)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen max_res_pid_brandweek = sd(res_pid_brandweek)
+{txt}(844 missing values generated)
+
+{com}. sum sd_res_pid_brandweek if sd_res_pid_brandweek>0
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+sd_res~dweek {c |}{res}  9,362,732    .0788648    .0235448   1.35e-29   .9329337
+{txt}
+{com}. *graph box res_pid_only, over(pid_id)
+. 
+. eststo t_var_4: reghdfe lg_promo_f, absorb(pid_id brand_week_num i.s_estar##i.week_num i.size_id##i.week_num i.type_id##i.week_num) residuals(res_pid_attweek)
+{res}{txt}(dropped 78 {browse "http://scorreia.com/research/singletons.pdf":singleton observations})
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 54 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res} 9,362,650
+{txt}Absorbing 5 HDFE groups{col 51}{help j_robustsingular##|_new:F(   0,9356723)}{col 67}=          {res}.
+{txt}{col 51}Prob > F{col 67}=          {res}.
+{txt}{col 51}R-squared{col 67}= {res}    0.9770
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.9770
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.0000
+{txt}{col 51}Root MSE{col 67}= {res}    0.0770
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  lg_promo_f{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}_cons {c |}{col 14}{res}{space 2} 7.018027{col 26}{space 2} .0000252{col 37}{space 1} 2.8e+05{col 46}{space 3}0.000{col 54}{space 4} 7.017978{col 67}{space 3} 7.018077
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 20}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text}        Absorbed FE{col 21}{c |} Categories{col 34} - Redundant{col 46}  = Num. Coefs{col 61}{c |}
+{res}{col 1}{text}{hline 20}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}             pid_id{col 21}{c |}{space 1}     2432{col 34}{space 1}        0{col 46}{result}{space 1}     2432{col 60}{text} {col 61}{c |}
+{res}{col 1}{text}     brand_week_num{col 21}{c |}{space 1}     2246{col 34}{space 1}       10{col 46}{result}{space 1}     2236{col 60}{text} {col 61}{c |}
+{res}{col 1}{text}   s_estar#week_num{col 21}{c |}{space 1}      504{col 34}{space 1}        1{col 46}{result}{space 1}      503{col 60}{text}?{col 61}{c |}
+{res}{col 1}{text}   size_id#week_num{col 21}{c |}{space 1}      504{col 34}{space 1}      252{col 46}{result}{space 1}      252{col 60}{text}?{col 61}{c |}
+{res}{col 1}{text}   type_id#week_num{col 21}{c |}{space 1}      756{col 34}{space 1}      252{col 46}{result}{space 1}      504{col 60}{text}?{col 61}{c |}
+{res}{col 1}{text}{hline 20}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+? = number of redundant parameters may be higher
+{res}{txt}
+{com}. bys pid_id: egen sd_res_pid_attweek  = sd(res_pid_attweek)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen min_res_pid_attweek = min(res_pid_attweek)
+{txt}(844 missing values generated)
+
+{com}. bys pid_id: egen max_res_pid_attweek = sd(res_pid_attweek)
+{txt}(844 missing values generated)
+
+{com}. sum sd_res_pid_attweek 
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+sd_res~tweek {c |}{res}  9,362,747    .0739958    .0212934          0   .9626384
+{txt}
+{com}. 
+. eststo t_var_5: reghdfe lg_promo_f, absorb(i.county_utility##i.pid_id pid_id brand_week_num i.s_estar##i.week_num i.size_id##i.week_num i.type_id##i.week_num) residuals(res_pid_attweek_cnty)
+{res}{txt}(dropped 26229 {browse "http://scorreia.com/research/singletons.pdf":singleton observations})
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 71 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res} 9,336,499
+{txt}Absorbing 6 HDFE groups{col 51}{help j_robustsingular##|_new:F(   0,9013745)}{col 67}=          {res}.
+{txt}{col 51}Prob > F{col 67}=          {res}.
+{txt}{col 51}R-squared{col 67}= {res}    0.9791
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.9783
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.0000
+{txt}{col 51}Root MSE{col 67}= {res}    0.0748
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  lg_promo_f{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}_cons {c |}{col 14}{res}{space 2}  7.01762{col 26}{space 2} .0000245{col 37}{space 1} 2.9e+05{col 46}{space 3}0.000{col 54}{space 4} 7.017572{col 67}{space 3} 7.017668
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 25}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text}             Absorbed FE{col 26}{c |} Categories{col 39} - Redundant{col 51}  = Num. Coefs{col 66}{c |}
+{res}{col 1}{text}{hline 25}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}   county_utility#pid_id{col 26}{c |}{space 1}   319263{col 39}{space 1}        0{col 51}{result}{space 1}   319263{col 65}{text} {col 66}{c |}
+{res}{col 1}{text}                  pid_id{col 26}{c |}{space 1}     2426{col 39}{space 1}     2426{col 51}{result}{space 1}        0{col 65}{text} {col 66}{c |}
+{res}{col 1}{text}          brand_week_num{col 26}{c |}{space 1}     2242{col 39}{space 1}       10{col 51}{result}{space 1}     2232{col 65}{text}?{col 66}{c |}
+{res}{col 1}{text}        s_estar#week_num{col 26}{c |}{space 1}      504{col 39}{space 1}        1{col 51}{result}{space 1}      503{col 65}{text}?{col 66}{c |}
+{res}{col 1}{text}        size_id#week_num{col 26}{c |}{space 1}      504{col 39}{space 1}      252{col 51}{result}{space 1}      252{col 65}{text}?{col 66}{c |}
+{res}{col 1}{text}        type_id#week_num{col 26}{c |}{space 1}      756{col 39}{space 1}      252{col 51}{result}{space 1}      504{col 65}{text}?{col 66}{c |}
+{res}{col 1}{text}{hline 25}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+? = number of redundant parameters may be higher
+{res}{txt}
+{com}. bys pid_id: egen sd_res_pid_attweek_cnty  = sd(res_pid_attweek_cnty)
+{txt}(857 missing values generated)
+
+{com}. bys pid_id: egen min_res_pid_attweek_cnty = min(res_pid_attweek_cnty)
+{txt}(857 missing values generated)
+
+{com}. bys pid_id: egen max_res_pid_attweek_cnty = sd(res_pid_attweek_cnty)
+{txt}(857 missing values generated)
+
+{com}. sum sd_res_pid_attweek_cnty
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+sd_res_pi~ty {c |}{res}  9,362,734    .0706105    .0203223          0   1.221055
+{txt}
+{com}. 
+. eststo t_var_6: reghdfe lg_promo_f, absorb(i.county_utility##i.brand_week_num i.county_utility##i.pid_id pid_id brand_week_num i.s_estar##i.week_num i.size_id##i.week_num i.type_id##i.week_num) residuals(res_pid_attweek_brandcnty)
+{res}{txt}(dropped 211967 {browse "http://scorreia.com/research/singletons.pdf":singleton observations})
+{res}{txt}({browse "http://scorreia.com/research/hdfe.pdf":MWFE estimator} converged in 142 iterations)
+{res}
+{txt}HDFE Linear regression{col 51}Number of obs{col 67}= {res} 9,150,761
+{txt}Absorbing 7 HDFE groups{col 51}{help j_robustsingular##|_new:F(   0,8284082)}{col 67}=          {res}.
+{txt}{col 51}Prob > F{col 67}=          {res}.
+{txt}{col 51}R-squared{col 67}= {res}    0.9806
+{txt}{col 51}Adj R-squared{col 67}= {res}    0.9785
+{txt}{col 51}Within R-sq.{col 67}= {res}    0.0000
+{txt}{col 51}Root MSE{col 67}= {res}    0.0744
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}  lg_promo_f{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}_cons {c |}{col 14}{res}{space 2} 7.015504{col 26}{space 2} .0000246{col 37}{space 1} 2.9e+05{col 46}{space 3}0.000{col 54}{space 4} 7.015455{col 67}{space 3} 7.015552
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{txt}Absorbed degrees of freedom:
+{res}{col 1}{text}{hline 33}{c TT}{hline 12}{hline 12}{hline 14}{hline 1}{c TRC}
+{col 1}{text}                     Absorbed FE{col 34}{c |} Categories{col 47} - Redundant{col 59}  = Num. Coefs{col 74}{c |}
+{res}{col 1}{text}{hline 33}{c +}{hline 12}{hline 12}{hline 14}{hline 1}{c RT}
+{col 1}{text}   county_utility#brand_week_num{col 34}{c |}{space 1}   557543{col 47}{space 1}        0{col 59}{result}{space 1}   557543{col 73}{text} {col 74}{c |}
+{res}{col 1}{text}           county_utility#pid_id{col 34}{c |}{space 1}   314958{col 47}{space 1}     7081{col 59}{result}{space 1}   307877{col 73}{text} {col 74}{c |}
+{res}{col 1}{text}                          pid_id{col 34}{c |}{space 1}     2381{col 47}{space 1}     2381{col 59}{result}{space 1}        0{col 73}{text}?{col 74}{c |}
+{res}{col 1}{text}                  brand_week_num{col 34}{c |}{space 1}     2050{col 47}{space 1}     2050{col 59}{result}{space 1}        0{col 73}{text}?{col 74}{c |}
+{res}{col 1}{text}                s_estar#week_num{col 34}{c |}{space 1}      504{col 47}{space 1}        1{col 59}{result}{space 1}      503{col 73}{text}?{col 74}{c |}
+{res}{col 1}{text}                size_id#week_num{col 34}{c |}{space 1}      504{col 47}{space 1}      252{col 59}{result}{space 1}      252{col 73}{text}?{col 74}{c |}
+{res}{col 1}{text}                type_id#week_num{col 34}{c |}{space 1}      756{col 47}{space 1}      252{col 59}{result}{space 1}      504{col 73}{text}?{col 74}{c |}
+{res}{col 1}{text}{hline 33}{c BT}{hline 12}{hline 12}{hline 14}{hline 1}{c BRC}
+? = number of redundant parameters may be higher
+{res}{txt}
+{com}. bys pid_id: egen sd_res_pid_attweek_brandcnty  = sd(res_pid_attweek_brandcnty)
+{txt}(1085 missing values generated)
+
+{com}. bys pid_id: egen min_res_pid_attweek_brandcnty = min(res_pid_attweek_brandcnty)
+{txt}(1085 missing values generated)
+
+{com}. bys pid_id: egen max_res_pid_attweek_brandcnty = sd(res_pid_attweek_brandcnty)
+{txt}(1085 missing values generated)
+
+{com}. sum sd_res_pid_attweek_cnty
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+sd_res~_cnty {c |}{res}  9,362,734    .0706105    .0203223          0   1.221055
+{txt}
+{com}. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}/Users/shoude/Dropbox/eegap/Replication_JPube_RR/log_Table2.txt
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}29 Jul 2021, 16:00:30
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
