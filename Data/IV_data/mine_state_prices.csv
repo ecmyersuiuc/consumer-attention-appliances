@@ -1,0 +1,38 @@
+description,units,source key,2008,2009,2010,2011,2012,2013
+All coal,$/short ton,COAL.SHIP_MINE_PRICE.US-TOT.A,,,,,,
+All coal : United States,$/short ton,COAL.SHIP_MINE_PRICE.US-TOT.A,39.8,42.73,43.73,45.82,45.45,44.69
+All coal : Middle Atlantic,$/short ton,COAL.SHIP_MINE_PRICE.MAT-TOT.A,50.88,57.53,58.45,63.41,63.67,65.05
+All coal : Pennsylvania,$/short ton,COAL.SHIP_MINE_PRICE.PA-TOT.A,50.88,57.53,58.45,63.41,63.67,65.05
+All coal : East North Central,$/short ton,COAL.SHIP_MINE_PRICE.ENC-TOT.A,43.49,50.14,51.75,56.82,57.95,55.61
+All coal : Illinois,$/short ton,COAL.SHIP_MINE_PRICE.IL-TOT.A,47.66,54.14,58.06,61.25,58.35,53.08
+All coal : Indiana,$/short ton,COAL.SHIP_MINE_PRICE.IN-TOT.A,39.49,43.34,48.2,55.86,59.17,58.94
+All coal : Ohio,$/short ton,COAL.SHIP_MINE_PRICE.OH-TOT.A,44.86,55.58,49.45,53.6,56.04,54.11
+All coal : West North Central,$/short ton,COAL.SHIP_MINE_PRICE.WNC-TOT.A,14.42,15.52,16.77,17.59,19.51,20.68
+All coal : Kansas,$/short ton,COAL.SHIP_MINE_PRICE.KS-TOT.A,49.14,54.15,60.91,59.44,55.49,--
+All coal : Missouri,$/short ton,COAL.SHIP_MINE_PRICE.MO-TOT.A,40.91,42.2,46.27,52.63,54.04,54.28
+All coal : North Dakota,$/short ton,COAL.SHIP_MINE_PRICE.ND-TOT.A,13.95,14.87,16.05,17.06,19.11,20.33
+All coal : South Atlantic,$/short ton,COAL.SHIP_MINE_PRICE.SAT-TOT.A,66.16,74.25,75.19,77.37,75.53,70.9
+All coal : Maryland,$/short ton,COAL.SHIP_MINE_PRICE.MD-TOT.A,48.84,51.95,53.21,54.08,55.91,55.6
+All coal : Virginia,$/short ton,COAL.SHIP_MINE_PRICE.VA-TOT.A,78.79,91.2,96.33,97.18,93.04,69.85
+All coal : West Virginia,$/short ton,COAL.SHIP_MINE_PRICE.WV-TOT.A,65.52,73.45,73.63,76.27,74.83,71.94
+All coal : East South Central,$/short ton,COAL.SHIP_MINE_PRICE.ESC-TOT.A,66.44,73.95,76.43,76.79,74.33,70.62
+All coal : Alabama,$/short ton,COAL.SHIP_MINE_PRICE.AL-TOT.A,70.38,77.85,78.14,80.73,83.11,87.35
+All coal : Kentucky,$/short ton,COAL.SHIP_MINE_PRICE.KY-TOT.A,67.17,75.13,77.93,77.88,75.37,71.31
+All coal : Mississippi,$/short ton,COAL.SHIP_MINE_PRICE.MS-TOT.A,18.39,19.67,20.64,22.47,23.71,25.08
+All coal : Tennessee,$/short ton,COAL.SHIP_MINE_PRICE.TN-TOT.A,84.23,102.41,108.87,98.22,110.19,101.53
+All coal : West South Central,$/short ton,COAL.SHIP_MINE_PRICE.WSC-TOT.A,20.86,24.08,23.58,22.99,25.41,24.67
+All coal : Arkansas,$/short ton,COAL.SHIP_MINE_PRICE.AR-TOT.A,--,--,--,60.21,40.88,45.06
+All coal : Louisiana,$/short ton,COAL.SHIP_MINE_PRICE.LA-TOT.A,26.99,28.43,30.63,33.14,40.8,46.02
+All coal : Oklahoma,$/short ton,COAL.SHIP_MINE_PRICE.OK-TOT.A,29.77,31.1,28.97,37.5,44.29,42.81
+All coal : Texas,$/short ton,COAL.SHIP_MINE_PRICE.TX-TOT.A,20.11,23.52,22.84,22.02,23.8,23.09
+All coal : Mountain,$/short ton,COAL.SHIP_MINE_PRICE.MTN-TOT.A,29.7,30.04,31.56,34.67,35.83,36.23
+All coal : Arizona,$/short ton,COAL.SHIP_MINE_PRICE.AZ-TOT.A,35.34,36.24,36.74,42.18,45.49,47.22
+All coal : Colorado,$/short ton,COAL.SHIP_MINE_PRICE.CO-TOT.A,52.19,51.42,53.87,58.59,59.38,56.73
+All coal : Montana,$/short ton,COAL.SHIP_MINE_PRICE.MT-TOT.A,26.37,26.11,27.07,33.27,35.19,34.04
+All coal : New Mexico,$/short ton,COAL.SHIP_MINE_PRICE.NM-TOT.A,34.88,35.37,35.59,37.3,38.03,39.69
+All coal : Utah,$/short ton,COAL.SHIP_MINE_PRICE.UT-TOT.A,38.68,41.32,43.56,42.77,44.48,46.19
+All coal : Wyoming,$/short ton,COAL.SHIP_MINE_PRICE.WY-TOT.A,27.68,28.28,30.14,33.01,34.21,34.8
+All coal : Pacific Contiguous,$/short ton,COAL.SHIP_MINE_PRICE.PCC-TOT.A,--,--,--,--,--,--
+All coal : Washington,$/short ton,COAL.SHIP_MINE_PRICE.WA-TOT.A,--,--,--,--,--,--
+All coal : Pacific Noncontiguous,$/short ton,COAL.SHIP_MINE_PRICE.PCN-TOT.A,30.43,22.85,22.25,27.1,--,--
+All coal : Alaska,$/short ton,COAL.SHIP_MINE_PRICE.AK-TOT.A,30.43,22.85,22.25,27.1,--,-- 
