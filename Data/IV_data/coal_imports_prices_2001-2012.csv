@@ -1,0 +1,348 @@
+description,units,source key,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012
+Total world : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-TOT-TOT.A,34,35.51,31.45,37.52,46.71,49.1,47.64,59.83,63.91,71.77,103.32,96.78
+Total world : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-TOT-TOT.A,32.53,33.93,30.24,36.06,43.35,46.15,45.31,56.75,61.4,62.47,81.11,84.27
+Total world : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-TOT-TOT.A,45.21,44.9,47.83,54.27,101.31,109.36,96.05,117.18,115.93,180.42,263.48,186.63
+Total world : coke,$/short ton,COAL.IMPORT_PRICE.COK-TOT-TOT.A,75.48,75.35,86.52,179.24,221.13,156.44,194.49,465.15,268.37,331.7,389.5,338.16
+Argentina,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Argentina : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-AR-TOT.A,--,190.82,176.22,--,--,--,320.2,351.18,348.33,335.44,504.7,488.42
+Argentina : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-AR-TOT.A,--,190.82,176.22,--,--,--,320.2,351.18,348.33,335.44,504.7,488.42
+Aruba,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Aruba : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-AW-TOT.A,37.2,--,--,38.47,--,20.53,--,--,--,--,116.98,--
+Aruba : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-AW-TOT.A,37.2,--,--,38.47,--,20.53,--,--,--,--,116.98,--
+Australia,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Australia : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-AU-TOT.A,36,38.52,33.98,41.94,48.5,52.74,31.71,53.19,57.54,56.75,52.72,--
+Australia : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-AU-TOT.A,36,33.12,30.35,31.44,31.84,49.73,31.71,53.19,57.54,56.75,52.72,--
+Australia : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-AU-TOT.A,--,39.77,35.81,46.91,56.15,59,--,--,--,--,--,--
+Australia : coke,$/short ton,COAL.IMPORT_PRICE.COK-AU-TOT.A,--,--,--,267.8,--,--,155.97,--,--,--,439.98,--
+Bahamas,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Bahamas : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-BS-TOT.A,--,--,--,--,--,--,35.1,--,--,102.01,--,--
+Bahamas : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-BS-TOT.A,--,--,--,--,--,--,35.1,--,--,102.01,--,--
+Belgium,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Belgium : coke,$/short ton,COAL.IMPORT_PRICE.COK-BE-TOT.A,--,--,--,262.5,--,--,--,--,--,--,--,--
+Brazil,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Brazil : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-BR-TOT.A,31.6,--,--,--,44.4,56.66,--,56.73,--,--,--,--
+Brazil : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-BR-TOT.A,31.6,--,--,--,44.4,56.66,--,56.73,--,--,--,--
+Brazil : coke,$/short ton,COAL.IMPORT_PRICE.COK-BR-TOT.A,460.2,--,--,136.07,188.1,221.85,225.83,272.15,285.31,287.7,494.41,157.6
+British Virgin Islands,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+British Virgin Islands : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-VG-TOT.A,--,--,--,--,--,--,--,--,--,--,102.74,--
+British Virgin Islands : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-VG-TOT.A,--,--,--,--,--,--,--,--,--,--,102.74,--
+Canada,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Canada : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-CA-TOT.A,44.82,46.81,48.92,53.55,96.67,99.67,89.96,109.91,108.68,167.33,253.79,184.89
+Canada : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-CA-TOT.A,41.26,46.18,47.24,49.33,60.91,54.89,55.95,65.57,77.63,84.21,102.48,120.5
+Canada : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-CA-TOT.A,45.23,46.94,49.6,55.68,105.8,111.85,97.28,117.18,115.93,180.42,272.42,194.46
+Canada : coke,$/short ton,COAL.IMPORT_PRICE.COK-CA-TOT.A,147.38,65.51,92.93,218.23,208.25,203.73,239.85,454.3,242.25,177.46,322.24,329.57
+Chile,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Chile : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-CL-TOT.A,453.75,335,--,--,--,--,--,--,--,--,--,--
+Chile : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-CL-TOT.A,453.75,335,--,--,--,--,--,--,--,--,--,--
+China,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+China : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-CN-TOT.A,49.76,57.17,49.28,55.77,93.35,98.93,111.71,228.09,291.64,223.42,267.33,133.39
+China : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-CN-TOT.A,49.76,57.17,49.28,55.77,93.35,98.93,111.71,228.09,291.64,223.42,267.33,133.39
+China : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-CN-TOT.A,--,--,--,--,--,--,--,--,--,--,--,124.59
+China : coke,$/short ton,COAL.IMPORT_PRICE.COK-CN-TOT.A,73.76,69.41,92.25,158.96,216.45,147.77,201.78,512,223.96,438.96,493.05,1055.83
+Colombia,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Colombia : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-CO-TOT.A,29.49,30.86,28.44,34.99,44.82,46.93,46.33,57.01,60.66,63.31,82.89,83.94
+Colombia : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-CO-TOT.A,29.49,30.86,28.44,34.99,44.82,46.93,46.33,57.01,60.66,63.31,82.89,83.94
+Colombia : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-CO-TOT.A,--,--,--,--,--,--,--,--,--,--,--,81.65
+Colombia : coke,$/short ton,COAL.IMPORT_PRICE.COK-CO-TOT.A,--,--,102.68,191.3,208.48,169.11,230.32,401.24,319.54,313.69,345.02,210.78
+Czech Republic,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Czech Republic : coke,$/short ton,COAL.IMPORT_PRICE.COK-CZ-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+Dominican Republic,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Dominican Republic : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-DO-TOT.A,161.02,91.8,98.9,89.07,--,--,--,--,--,--,--,--
+Dominican Republic : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-DO-TOT.A,161.02,91.8,98.9,89.07,--,--,--,--,--,--,--,--
+Ecuador,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Ecuador : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-EC-TOT.A,--,--,36.47,--,--,--,--,--,--,--,--,--
+Ecuador : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-EC-TOT.A,--,--,36.47,--,--,--,--,--,--,--,--,--
+Egypt,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Egypt : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-EG-TOT.A,--,--,--,452.57,--,--,--,--,666.67,40.63,58.98,71.41
+Egypt : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-EG-TOT.A,--,--,--,452.57,--,--,--,--,666.67,40.63,58.98,71.41
+Egypt : coke,$/short ton,COAL.IMPORT_PRICE.COK-EG-TOT.A,--,82.85,112.85,339.16,331.61,--,236.78,557.04,--,363.22,--,777.14
+France,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+France : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-FR-TOT.A,--,--,--,--,--,--,--,59.54,--,--,59.01,--
+France : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-FR-TOT.A,--,--,--,--,--,--,--,59.54,--,--,59.01,--
+France : coke,$/short ton,COAL.IMPORT_PRICE.COK-FR-TOT.A,--,--,--,--,--,--,218.02,--,--,--,--,--
+"Germany, Federal Republic Of",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Germany, Federal Republic Of : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-DE-TOT.A,--,--,--,--,74.85,--,164.84,213.38,5280,--,69.62,--
+"Germany, Federal Republic Of : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-DE-TOT.A,--,--,--,--,74.85,--,164.84,213.38,5280,--,69.62,--
+"Germany, Federal Republic Of : coke",$/short ton,COAL.IMPORT_PRICE.COK-DE-TOT.A,258.33,390.4,509.53,532.25,--,428.25,--,956,227.01,2091,--,--
+Hong Kong,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Hong Kong : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-HK-TOT.A,--,--,--,--,--,--,--,--,197.23,--,--,--
+Hong Kong : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-HK-TOT.A,--,--,--,--,--,--,--,--,197.23,--,--,--
+India,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+India : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-IN-TOT.A,73.31,58.97,19.7,74.82,--,--,58.88,--,59.12,61.44,58.63,64.36
+India : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-IN-TOT.A,73.31,58.97,19.7,74.82,--,--,58.88,--,59.12,61.44,58.63,64.36
+India : coke,$/short ton,COAL.IMPORT_PRICE.COK-IN-TOT.A,--,--,--,--,208.25,245.32,--,--,548.24,379.1,--,--
+Indonesia,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Indonesia : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-ID-TOT.A,42.51,35.35,28.36,20.81,20.83,22.81,26.1,37.68,51.74,44.58,47.13,53.54
+Indonesia : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-ID-TOT.A,42.51,35.35,28.36,20.81,20.83,22.81,26.1,37.68,51.74,44.58,47.13,53.54
+Indonesia : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-ID-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+Indonesia : coke,$/short ton,COAL.IMPORT_PRICE.COK-ID-TOT.A,--,--,--,--,--,--,315.63,--,--,--,523.79,507.81
+Israel,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Israel : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-IL-TOT.A,--,--,--,--,38.57,--,--,--,--,--,--,--
+Israel : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-IL-TOT.A,--,--,--,--,38.57,--,--,--,--,--,--,--
+Italy,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Italy : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-IT-TOT.A,--,33.52,--,50.41,62.18,--,--,--,653.78,1159.25,1097.5,689
+Italy : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-IT-TOT.A,--,33.52,--,50.41,62.18,--,--,--,653.78,1159.25,1097.5,689
+Italy : coke,$/short ton,COAL.IMPORT_PRICE.COK-IT-TOT.A,--,--,--,--,--,--,--,--,--,308.56,--,--
+Japan,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Japan : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-JP-TOT.A,74.99,--,--,74.89,--,74.89,--,--,--,--,120.73,296.87
+Japan : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-JP-TOT.A,74.99,--,--,74.89,--,74.89,--,--,--,--,120.73,296.87
+Japan : coke,$/short ton,COAL.IMPORT_PRICE.COK-JP-TOT.A,73.3,78.79,78.78,123.51,222.74,170.11,160.53,332.38,398.19,419.92,419.62,359.45
+Latvia,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Latvia : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-LV-TOT.A,--,--,--,46.76,50.01,--,--,--,--,--,--,--
+Latvia : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-LV-TOT.A,--,--,--,46.76,50.01,--,--,--,--,--,--,--
+Libya,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Libya : coke,$/short ton,COAL.IMPORT_PRICE.COK-LY-TOT.A,--,--,--,240.4,--,--,--,--,--,--,--,--
+Malta,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Malta : coke,$/short ton,COAL.IMPORT_PRICE.COK-MT-TOT.A,--,--,--,326.58,111.12,--,--,--,--,--,--,--
+Mexico,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Mexico : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-MX-TOT.A,30.97,28.3,--,100.2,81.52,--,--,--,970.67,--,109.99,318.49
+Mexico : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-MX-TOT.A,31.72,28,--,100.2,81.52,--,--,--,--,--,109.99,318.49
+Mexico : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-MX-TOT.A,29.67,29.34,--,--,--,--,--,--,970.67,--,--,--
+Mexico : coke,$/short ton,COAL.IMPORT_PRICE.COK-MX-TOT.A,--,--,--,--,220.58,--,833.33,--,--,287.47,216.64,--
+Mongolia,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Mongolia : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-MN-TOT.A,--,--,--,--,38.64,--,--,--,--,--,--,--
+Mongolia : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-MN-TOT.A,--,--,--,--,38.64,--,--,--,--,--,--,--
+Netherlands,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Netherlands : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-NL-TOT.A,589.58,--,75,--,--,72.77,--,--,--,--,--,--
+Netherlands : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-NL-TOT.A,589.58,--,75,--,--,72.77,--,--,--,--,--,--
+Netherlands : coke,$/short ton,COAL.IMPORT_PRICE.COK-NL-TOT.A,87.54,101.35,--,--,--,--,--,516.01,236.74,--,--,--
+New Zealand,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+New Zealand : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-NZ-TOT.A,38.47,--,23.62,--,57.23,--,57.23,--,--,22.56,--,113.64
+New Zealand : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-NZ-TOT.A,38.47,--,23.62,--,57.23,--,--,--,--,22.56,--,--
+New Zealand : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-NZ-TOT.A,--,--,--,--,--,--,57.23,--,--,--,--,113.64
+New Zealand : coke,$/short ton,COAL.IMPORT_PRICE.COK-NZ-TOT.A,--,--,--,--,--,--,--,--,--,--,--,671.17
+Norway,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Norway : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-NO-TOT.A,63.5,--,--,--,--,65.5,65.5,--,--,--,--,--
+Norway : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-NO-TOT.A,63.5,--,--,--,--,65.5,65.5,--,--,--,--,--
+Panama,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Panama : coke,$/short ton,COAL.IMPORT_PRICE.COK-PA-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+Paraguay,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Paraguay : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-PY-TOT.A,--,--,--,212.08,--,--,--,--,--,--,--,--
+Paraguay : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-PY-TOT.A,--,--,--,212.08,--,--,--,--,--,--,--,--
+Peru,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Peru : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-PE-TOT.A,--,--,--,--,--,--,--,--,--,--,80.29,--
+Peru : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-PE-TOT.A,--,--,--,--,--,--,--,--,--,--,80.29,--
+Philippines,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Philippines : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-PH-TOT.A,--,--,--,326.25,--,--,--,--,--,--,--,--
+Philippines : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-PH-TOT.A,--,--,--,326.25,--,--,--,--,--,--,--,--
+Philippines : coke,$/short ton,COAL.IMPORT_PRICE.COK-PH-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+Poland,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Poland : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-PL-TOT.A,34.76,33.31,--,68.7,44,--,--,--,--,--,163.37,--
+Poland : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-PL-TOT.A,34.76,33.31,--,68.7,44,--,--,--,--,--,--,--
+Poland : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-PL-TOT.A,--,--,--,--,--,--,--,--,--,--,163.37,--
+Poland : coke,$/short ton,COAL.IMPORT_PRICE.COK-PL-TOT.A,--,102.06,114.45,259.99,247.95,161.51,--,452.31,--,294.17,377.84,--
+Russia,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Russia : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-RU-TOT.A,32.86,38.1,54.06,79.1,54.7,52.79,55.16,207.11,--,--,89.38,174
+Russia : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-RU-TOT.A,32.86,38.1,54.06,79.1,54.7,52.79,55.16,207.11,--,--,2620,174
+Russia : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-RU-TOT.A,--,--,--,--,--,--,--,--,--,--,75,--
+Russia : coke,$/short ton,COAL.IMPORT_PRICE.COK-RU-TOT.A,--,--,--,260.72,269.85,298.13,--,--,--,87.25,330.67,--
+Somalia,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Somalia : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-SO-TOT.A,164.38,--,--,--,--,--,--,--,--,--,--,--
+Somalia : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-SO-TOT.A,164.38,--,--,--,--,--,--,--,--,--,--,--
+South Africa,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+South Africa : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-ZA-TOT.A,32.67,32.36,38.36,94.74,42.89,51.8,--,97.78,--,--,64.55,--
+South Africa : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-ZA-TOT.A,32.67,32.36,38.36,94.74,42.89,51.8,--,97.78,--,--,64.55,--
+South Africa : coke,$/short ton,COAL.IMPORT_PRICE.COK-ZA-TOT.A,--,--,--,--,1114.06,--,--,--,--,--,--,--
+South Korea (Republic Of Korea),,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+South Korea (Republic Of Korea) : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-KR-TOT.A,--,--,--,--,--,--,--,569.38,568.72,618.39,747.38,--
+South Korea (Republic Of Korea) : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-KR-TOT.A,--,--,--,--,--,--,--,569.38,568.72,618.39,747.38,--
+Spain,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Spain : coke,$/short ton,COAL.IMPORT_PRICE.COK-ES-TOT.A,--,97.07,--,--,--,--,223.89,--,--,575.4,--,--
+Switzerland,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Switzerland : coke,$/short ton,COAL.IMPORT_PRICE.COK-CH-TOT.A,--,--,--,--,239.82,--,--,--,--,--,496.68,--
+Syria (Syrian Arab Republic),,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Syria (Syrian Arab Republic) : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-SY-TOT.A,--,--,6542,75.3,--,75.03,--,525,--,951.33,--,--
+Syria (Syrian Arab Republic) : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-SY-TOT.A,--,--,6542,75.3,--,75.03,--,525,--,951.33,--,--
+Syria (Syrian Arab Republic) : coke,$/short ton,COAL.IMPORT_PRICE.COK-SY-TOT.A,--,--,--,--,498.2,8052,6207,2865.5,6340,3594.25,5400,9546
+Taiwan,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Taiwan : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-TW-TOT.A,1224,--,--,--,--,--,--,--,--,--,--,--
+Taiwan : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-TW-TOT.A,1224,--,--,--,--,--,--,--,--,--,--,--
+Thailand,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Thailand : coke,$/short ton,COAL.IMPORT_PRICE.COK-TH-TOT.A,--,--,--,--,--,--,--,--,1181.67,1350,--,--
+Trinidad And Tobago,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Trinidad And Tobago : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-TT-TOT.A,--,172.3,--,--,--,--,--,--,--,--,--,--
+Trinidad And Tobago : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-TT-TOT.A,--,172.3,--,--,--,--,--,--,--,--,--,--
+Turkey,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Turkey : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-TR-TOT.A,--,--,--,21.42,--,--,--,--,--,--,68.88,--
+Turkey : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-TR-TOT.A,--,--,--,21.42,--,--,--,--,--,--,68.88,--
+Turkey : coke,$/short ton,COAL.IMPORT_PRICE.COK-TR-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+Ukraine,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Ukraine : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-UA-TOT.A,--,--,--,47.91,58.19,--,130.02,147.19,81.65,130.18,141.31,133.15
+Ukraine : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-UA-TOT.A,--,--,--,73.68,58.19,--,130.02,147.19,81.65,130.18,141.31,133.15
+Ukraine : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-UA-TOT.A,--,--,--,38.47,--,--,--,--,--,--,--,--
+Ukraine : coke,$/short ton,COAL.IMPORT_PRICE.COK-UA-TOT.A,--,--,--,244.69,211,--,--,384.37,--,308.44,427.85,361.47
+United Arab Emirates,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+United Arab Emirates : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-AE-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+United Arab Emirates : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-AE-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+United Arab Emirates : coke,$/short ton,COAL.IMPORT_PRICE.COK-AE-TOT.A,--,--,--,--,--,--,--,--,--,--,--,--
+United Kingdom,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+United Kingdom : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-GB-TOT.A,43.83,81.01,112.44,46.2,77.54,75.94,77.11,--,743.67,85.04,--,792
+United Kingdom : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-GB-TOT.A,43.83,81.01,112.44,46.2,77.54,75.94,77.11,--,743.67,85.04,--,792
+United Kingdom : coke,$/short ton,COAL.IMPORT_PRICE.COK-GB-TOT.A,--,--,--,--,--,--,3831,1021,280.84,--,408.48,384.92
+Venezuela,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Venezuela : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-VE-TOT.A,37.53,38.92,33.79,40.24,46.46,54.7,54.7,75.96,82.38,72.75,83.22,109.51
+Venezuela : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-VE-TOT.A,37.53,38.92,33.79,40.24,46.46,54.7,54.7,75.96,82.38,72.75,77.02,76.36
+Venezuela : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-VE-TOT.A,--,--,--,--,--,--,--,--,--,--,126.63,138.05
+Venezuela : coke,$/short ton,COAL.IMPORT_PRICE.COK-VE-TOT.A,--,--,--,--,--,281.81,260.36,--,--,247.66,--,--
+Vietnam,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Vietnam : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-VN-TOT.A,--,--,--,--,35.4,--,--,--,--,--,--,--
+Vietnam : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-VN-TOT.A,--,--,--,--,35.4,--,--,--,--,--,--,--
+Total U.S.,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Total U.S. : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-TOT-TOT.A,34,35.51,31.45,37.52,46.71,49.1,47.64,59.83,63.91,71.77,103.32,96.78
+Total U.S. : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-TOT-TOT.A,32.53,33.93,30.24,36.06,43.35,46.15,45.31,56.75,61.4,62.47,81.11,84.27
+Total U.S. : metallurgical,$/short ton,COAL.IMPORT_PRICE.MET-TOT-TOT.A,45.21,44.9,47.83,54.27,101.31,109.36,96.05,117.18,115.93,180.42,263.48,186.63
+Total U.S. : coke,$/short ton,COAL.IMPORT_PRICE.COK-TOT-TOT.A,75.48,75.35,86.52,179.24,221.13,156.44,194.49,465.15,268.37,331.7,389.5,338.16
+"Baltimore, MD",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Baltimore, MD : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-BA_MD.A,47.7,45.34,36.02,56.54,51.6,54.23,28.14,54.5,43.91,55.97,108.03,138.05
+"Baltimore, MD : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-BA_MD.A,47.7,47.26,37.03,60.11,50.27,53.74,28.14,54.5,43.91,55.97,82.68,--
+"Baltimore, MD : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-BA_MD.A,--,39.34,33.57,46.91,56.15,59,--,--,--,--,126.63,138.05
+"Baltimore, MD : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-BA_MD.A,76.35,89.44,93.66,129.59,217.46,159.48,208.66,464.86,--,323.52,452.26,350.91
+"Boston, MA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Boston, MA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-BO_MA.A,34.26,33.47,27.06,29.55,41.3,40.49,38.17,40.95,55.87,50.05,59.25,56.84
+"Boston, MA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-BO_MA.A,34.26,33.47,27.06,29.55,41.3,40.49,38.17,40.95,55.87,50.05,59.25,56.84
+"Buffalo, NY",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Buffalo, NY : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-BU_NY.A,--,--,4230,267.14,120.04,116.76,103.53,259.28,226.93,163.22,105.21,284.84
+"Buffalo, NY : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-BU_NY.A,--,--,4230,267.14,38.51,74.57,119.33,205.71,--,298.08,105.21,284.84
+"Buffalo, NY : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-BU_NY.A,--,--,--,--,120.82,116.96,103.53,259.37,226.93,163.19,--,--
+"Buffalo, NY : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-BU_NY.A,93.21,92.12,131.21,101.88,130.13,159.79,138.89,156.78,171.09,171.96,217.96,220.7
+"Charleston, SC",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Charleston, SC : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-CH_SC.A,29.93,--,30.66,59.38,64.96,39.27,47.65,78.55,88.07,75.18,2620,--
+"Charleston, SC : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-CH_SC.A,29.93,--,30.66,59.38,64.96,39.27,47.65,78.55,88.07,75.18,2620,--
+"Charleston, SC : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-CH_SC.A,--,--,--,--,--,--,--,--,--,--,--,--
+"Charleston, SC : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-CH_SC.A,258.33,--,--,266.37,309.52,298.13,--,--,--,--,--,199.68
+"Charlotte, NC",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Charlotte, NC : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-CH_NC.A,--,33.07,32.16,41.3,44.98,59.66,54.37,53.89,--,--,--,--
+"Charlotte, NC : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-CH_NC.A,--,33.07,32.16,41.3,44.98,59.66,54.37,53.89,--,--,--,--
+"Charlotte, NC : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-CH_NC.A,--,--,--,--,--,--,--,773.33,669.67,--,--,--
+"Chicago, IL",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Chicago, IL : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-CH_IL.A,--,--,--,53.75,--,--,--,207.11,244.01,262.42,257.55,163.85
+"Chicago, IL : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-CH_IL.A,--,--,--,53.75,--,--,--,207.11,244.01,262.42,161.85,163.85
+"Chicago, IL : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-CH_IL.A,--,--,--,--,--,--,--,--,--,--,258.22,--
+"Chicago, IL : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-CH_IL.A,87.54,--,--,--,--,245.32,276.35,592.6,302.88,159.58,366.4,--
+"Cleveland, OH",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Cleveland, OH : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-CL_OH.A,--,--,52.69,59.77,115.68,--,--,74.65,--,170.42,434.06,296.87
+"Cleveland, OH : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-CL_OH.A,--,--,--,98.71,--,--,--,74.65,--,--,434.06,296.87
+"Cleveland, OH : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-CL_OH.A,--,--,52.69,56.01,115.68,--,--,--,--,170.42,--,--
+"Cleveland, OH : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-CL_OH.A,53.61,40.57,46.07,188.49,145.11,162.68,234.47,554.1,97.18,--,151.58,--
+"Columbia-Snake, OR",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Columbia-Snake, OR : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-CO_OR.A,58.79,65.32,--,--,--,--,--,--,--,--,--,--
+"Columbia-Snake, OR : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-CO_OR.A,58.79,65.32,--,--,--,--,--,--,--,--,--,--
+"Columbia-Snake, OR : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-CO_OR.A,--,--,--,136.07,188.1,221.85,225.83,272.15,255.11,287.7,494.41,--
+"Detroit, MI",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Detroit, MI : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-DE_MI.A,43.14,43.81,45.47,55.16,89.57,103.91,87.33,66.59,117.8,223.47,336.5,221.72
+"Detroit, MI : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-DE_MI.A,114.01,46.35,45.26,55.23,102.22,120.07,76.2,95,100.37,74.93,102.23,385.92
+"Detroit, MI : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-DE_MI.A,43.07,43.64,46.05,54.68,82.91,102.88,87.37,66.45,117.82,223.66,337.28,221.69
+"Detroit, MI : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-DE_MI.A,75.29,87.78,93.86,279.34,263.38,181.02,229.3,478.02,196.37,168.29,202.58,365
+"Duluth, MN",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Duluth, MN : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-DU_MN.A,54.63,71.19,81.52,95.02,80,62.49,--,--,--,--,261.16,227.54
+"Duluth, MN : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-DU_MN.A,109.85,71.19,81.52,95.02,80,62.49,--,--,--,--,104.87,--
+"Duluth, MN : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-DU_MN.A,28.31,--,--,--,--,--,--,--,--,--,261.94,227.54
+"El Paso, TX",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"El Paso, TX : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-EP_TX.A,--,--,--,100.2,81.52,--,--,--,--,--,--,--
+"El Paso, TX : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-EP_TX.A,--,--,--,100.2,81.52,--,--,--,--,--,--,--
+"Great Falls, MT",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Great Falls, MT : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-GF_MT.A,44.32,52.54,51.39,60.9,47.29,65.14,82.64,86.07,89.29,167.05,141.86,137.31
+"Great Falls, MT : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-GF_MT.A,222.76,76.83,55.61,54.16,59.42,65.14,82.64,84.86,89.29,94.72,113.68,137.31
+"Great Falls, MT : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-GF_MT.A,44.13,41.9,50.97,61.26,30.71,--,--,179.93,--,169.28,182.18,--
+"Great Falls, MT : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-GF_MT.A,267.48,92.25,49.97,--,2000,--,2621,410.42,1082.18,358.75,695.94,341.42
+"Honolulu, HI",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Honolulu, HI : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-HO_HI.A,45.86,46.02,39.11,20.91,20.19,20.04,26.83,56.6,54.43,58.05,49.1,52.4
+"Honolulu, HI : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-HO_HI.A,45.86,46.02,39.11,20.91,20.19,20.04,26.83,56.6,54.43,58.05,49.1,52.4
+"Houston-Galveston, TX",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Houston-Galveston, TX : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-HG_TX.A,34.98,29.12,30.99,--,53.2,57.97,48.37,56.71,65.84,57.03,60.41,62.49
+"Houston-Galveston, TX : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-HG_TX.A,34.98,29.12,30.99,--,53.2,57.97,48.37,56.71,65.84,57.03,60.41,62.32
+"Houston-Galveston, TX : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-HG_TX.A,--,--,--,--,--,--,--,--,--,--,--,74.64
+"Houston-Galveston, TX : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-HG_TX.A,--,--,--,--,--,--,3831,1021,--,539.81,811.94,555.38
+"Laredo, TX",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Laredo, TX : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-LA_TX.A,30.97,29.39,--,--,--,--,--,--,970.67,--,61.93,496
+"Laredo, TX : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-LA_TX.A,31.72,29.48,--,--,--,--,--,--,--,--,61.93,496
+"Laredo, TX : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-LA_TX.A,29.67,29.34,--,--,--,--,--,--,970.67,--,--,--
+"Laredo, TX : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-LA_TX.A,--,--,--,--,220.58,--,651.92,--,126.56,287.47,199.3,--
+"Los Angeles, CA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Los Angeles, CA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-LA_CA.A,1224,--,32.35,87.29,74.92,72.59,--,460.53,--,52.77,476.48,--
+"Los Angeles, CA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-LA_CA.A,1224,--,32.35,87.29,74.92,72.59,--,460.53,--,52.77,476.48,--
+"Los Angeles, CA : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-LA_CA.A,--,--,--,615.1,565.64,604.93,542.95,1141.26,508.48,2632.43,5400,647.53
+"Miami, FL",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Miami, FL : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-MI_FL.A,453.75,38.16,31.92,49.92,--,--,--,--,653.78,389.96,1097.5,391.39
+"Miami, FL : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-MI_FL.A,453.75,38.16,31.92,49.92,--,--,--,--,653.78,389.96,1097.5,391.39
+"Milwaukee, WI",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Milwaukee, WI : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-MI_WI.A,--,--,--,--,--,--,--,--,--,--,--,--
+"Minneapolis, MN",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Minneapolis, MN : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-MI_MN.A,--,--,--,--,--,--,--,--,--,--,66.71,124.59
+"Minneapolis, MN : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-MI_MN.A,--,--,--,--,--,--,--,--,--,--,66.71,--
+"Minneapolis, MN : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-MI_MN.A,--,--,--,--,--,--,--,--,--,--,--,124.59
+"Mobile, AL",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Mobile, AL : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-MO_AL.A,27.76,29.33,26.38,31.21,40.36,45.82,46.56,65.46,69.07,80.21,88.07,95.81
+"Mobile, AL : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-MO_AL.A,27.76,28.09,26.38,31.21,40.36,45.82,46.56,65.46,69.07,80.21,88.07,95.81
+"Mobile, AL : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-MO_AL.A,--,39.83,--,--,--,--,--,--,--,--,--,--
+"Mobile, AL : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-MO_AL.A,73.3,72.07,88.31,182.29,206.74,138.96,163.96,374.58,270.47,365.35,393.81,339.36
+"New Orleans, LA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"New Orleans, LA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-NO_LA.A,34.99,44.08,37.82,50.07,48.68,56.69,53.73,61.35,68.2,192.57,166.1,155.9
+"New Orleans, LA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-NO_LA.A,34.76,44.08,37.58,50.82,48.68,56.69,53.65,61.35,68.2,192.57,166.1,155.9
+"New Orleans, LA : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-NO_LA.A,37.78,--,41.2,38.47,--,--,57.23,--,--,--,--,--
+"New Orleans, LA : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-NO_LA.A,67.08,64.05,75.44,218.82,232.15,153.11,175.7,480.62,320.07,330.21,377.66,325.71
+"New York City, NY",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"New York City, NY : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-NY_NY.A,33.43,41.59,37.51,47.92,58.9,58.17,55.07,72.15,85.87,77.33,82.86,112.83
+"New York City, NY : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-NY_NY.A,33.43,41.59,37.51,47.92,58.9,58.17,55.07,72.15,85.87,77.33,82.86,110.58
+"New York City, NY : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-NY_NY.A,--,--,--,--,--,--,--,--,--,--,75,1239
+"New York City, NY : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-NY_NY.A,--,390.4,509.53,--,--,308.33,240.92,--,--,550.4,523.79,571.25
+"Nogales, AZ",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Nogales, AZ : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-NO_AZ.A,--,--,--,--,--,--,--,--,--,--,140.61,--
+"Nogales, AZ : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-NO_AZ.A,--,--,--,--,--,--,--,--,--,--,140.61,--
+"Norfolk, VA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Norfolk, VA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-NO_VA.A,--,--,--,--,--,--,48.42,48.11,52.05,68.19,70.85,70.28
+"Norfolk, VA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-NO_VA.A,--,--,--,--,--,--,48.42,48.11,52.05,68.19,70.83,70.28
+"Norfolk, VA : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-NO_VA.A,--,--,--,--,--,--,--,--,--,--,163.37,--
+"Norfolk, VA : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-NO_VA.A,--,--,--,--,--,--,--,1093,--,--,--,--
+"Ogdensburg, NY",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Ogdensburg, NY : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-OG_NY.A,250,--,271.99,270.52,--,--,--,--,--,--,422.45,498
+"Ogdensburg, NY : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-OG_NY.A,250,--,271.99,270.52,--,--,--,--,--,--,422.45,498
+"Ogdensburg, NY : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-OG_NY.A,--,--,--,--,--,161.27,--,--,--,--,195.03,--
+"Pembina, ND",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Pembina, ND : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-PE_ND.A,48.01,49.23,51,54.56,104.18,110.28,98.4,110.07,102.31,146.47,232.12,172.41
+"Pembina, ND : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-PE_ND.A,65.17,62.53,69.59,58.54,58.7,76.7,74.56,86.91,82.41,94.12,103.03,121.83
+"Pembina, ND : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-PE_ND.A,47.15,48.19,49.6,54.24,108.96,114.84,101.11,112.55,106.32,162.07,248.41,180.74
+"Pembina, ND : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-PE_ND.A,366.47,123.04,131.77,71.78,106.68,--,778.88,2858,3735.43,713.6,929,--
+"Philadelphia, PA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Philadelphia, PA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-PH_PA.A,40.59,40.29,38.32,39.93,58.11,56.16,51.82,74.58,80.47,56.65,--,--
+"Philadelphia, PA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-PH_PA.A,40.59,40.29,38.32,39.93,58.11,56.16,51.82,74.58,80.47,56.65,--,--
+"Philadelphia, PA : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-PH_PA.A,75.37,77.65,--,281.59,--,1147.75,--,530.32,--,254.44,--,--
+"Portland, ME",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Portland, ME : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-PO_ME.A,34.71,32.9,31.01,38.25,45.16,49.7,53.21,68.56,84.35,68.99,73.44,88.9
+"Portland, ME : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-PO_ME.A,34.71,32.9,31.01,38.25,45.16,49.7,53.21,68.56,84.35,68.99,73.44,88.9
+"Providence, RI",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Providence, RI : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-PR_RI.A,--,30.05,31.44,34.93,53.62,52.9,47.26,48.97,66.15,69.15,66.5,51.36
+"Providence, RI : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-PR_RI.A,--,30.05,31.44,34.93,53.62,52.9,47.26,48.97,66.15,69.15,66.5,51.36
+"Providence, RI : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-PR_RI.A,--,--,--,--,--,--,--,--,--,--,--,--
+"San Diego, CA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"San Diego, CA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-SD_CA.A,--,--,--,50.31,--,--,--,--,--,--,--,196.33
+"San Diego, CA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-SD_CA.A,--,--,--,50.31,--,--,--,--,--,--,--,196.33
+"San Francisco, CA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"San Francisco, CA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-SF_CA.A,--,--,47.56,57.77,44.24,--,--,--,457.32,360.8,392.04,392.03
+"San Francisco, CA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-SF_CA.A,--,--,47.56,57.77,44.24,--,--,--,457.32,360.8,392.04,392.03
+"San Francisco, CA : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-SF_CA.A,71.21,85.87,--,557.51,219.54,130.35,1132.44,--,--,--,--,--
+"San Juan, PR",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"San Juan, PR : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-SJ_PR.A,33.09,34.85,33.37,36.27,35.07,37.56,43.55,44.82,39.82,33.82,90.28,91.61
+"San Juan, PR : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-SJ_PR.A,33.09,34.85,33.37,36.27,35.07,37.56,43.55,44.82,39.82,33.82,90.28,91.61
+"San Juan, PR : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-SJ_PR.A,--,--,--,--,--,--,--,--,--,--,--,--
+"San Juan, PR : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-SJ_PR.A,--,--,--,--,--,--,--,--,--,--,287.67,70.53
+"Savannah, GA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Savannah, GA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-SA_GA.A,30.14,33.75,30.5,32.76,43.27,57.52,48.95,99.7,568.72,618.39,895.13,113.64
+"Savannah, GA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-SA_GA.A,30.14,33.75,30.5,32.76,43.27,57.52,48.95,99.7,568.72,618.39,895.13,--
+"Savannah, GA : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-SA_GA.A,--,--,--,--,--,--,--,--,--,--,--,113.64
+"Savannah, GA : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-SA_GA.A,--,--,--,262.5,--,--,--,--,307.18,2091,--,81.65
+"Seattle, WA",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Seattle, WA : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-SE_WA.A,27.14,26.51,27.38,27.23,27.22,34.1,41.93,53.14,70.44,68.14,95.95,109.11
+"Seattle, WA : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-SE_WA.A,27.14,26.51,27.38,27.23,27.22,34.1,41.93,53.14,70.44,68.14,95.95,109.11
+"Seattle, WA : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-SE_WA.A,365.94,448.68,--,189.11,--,--,--,--,--,--,286.46,--
+"St. Albans, VT",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"St. Albans, VT : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-SA_VT.A,--,--,--,3984,--,--,--,--,--,--,--,310.4
+"St. Albans, VT : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-SA_VT.A,--,--,--,3984,--,--,--,--,--,--,--,310.4
+"St. Albans, VT : coke",$/short ton,COAL.IMPORT_PRICE.COK-TOT-SA_VT.A,--,--,--,--,--,--,--,--,--,1220.56,--,--
+"Tampa, FL",,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+"Tampa, FL : all coal",$/short ton,COAL.IMPORT_PRICE.TOT-TOT-TA_FL.A,32.98,31.5,30.28,36.74,36.13,41.65,40.28,43.9,51.96,49.39,90.7,70.11
+"Tampa, FL : steam coal",$/short ton,COAL.IMPORT_PRICE.STM-TOT-TA_FL.A,32.98,31.5,30.28,36.74,36.13,41.65,40.28,43.9,51.96,49.39,90.7,70.11
+"Tampa, FL : metallurgical",$/short ton,COAL.IMPORT_PRICE.MET-TOT-TA_FL.A,--,--,--,--,--,--,--,--,--,--,--,--
+Virgin Islands Of The United States,,COAL.IMPORT_PRICE..A,,,,,,,,,,,,
+Virgin Islands Of The United States : all coal,$/short ton,COAL.IMPORT_PRICE.TOT-TOT-VI.A,--,--,--,--,--,--,--,--,--,--,--,--
+Virgin Islands Of The United States : steam coal,$/short ton,COAL.IMPORT_PRICE.STM-TOT-VI.A,--,--,--,--,--,--,--,--,--,--,--,-- 
